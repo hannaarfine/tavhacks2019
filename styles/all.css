@@ -1,0 +1,455 @@
+header {
+  background-color: #fff;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  border-bottom: 1px solid #f7f7f7;
+  font-family: 'Lato', sans-serif;
+}
+body {
+  font-family: 'Lato', sans-serif;
+}
+.title {
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 15px;
+  width: 60px;
+  text-align: center;
+
+}
+nav ul {
+  padding-left: 0;
+}
+.error {
+  background: #f7f7f7;
+  padding: 15px !important;
+}
+
+a {
+  text-decoration: none !important;
+  color:#222 !important;
+}
+
+#nav-right {
+  float: right;
+	font-weight: 200;
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	z-index:30;
+	height: 40px;
+	display: flex;
+	align-items: center;
+}
+
+#nav-right li {
+  height: 30px;
+  display: inline;
+  align-items: center;
+  margin: 0;
+  padding: 10px 30px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+.center img {
+  max-width: 25%;
+}
+
+.park_panel {
+  /* border: 1px solid #f7f7f7; */
+  padding: 20px;
+  width: 290px;
+  margin: 2% 0;
+  font-family: 'Lato', sans-serif;
+  font-size: 13px;
+  position: relative;
+}
+.park_img {
+  /* height: 275px; */
+  overflow-y: hidden;
+  align-items: center;
+  display: flex;
+  /* border-radius: 4px; */
+}
+.pin {
+  position: absolute;
+  top: 87.5%;
+  left: 2%;
+  width: 35px;
+}
+.state {
+  margin-left: 16px !important;
+}
+.park_panel img {
+  max-width: 100%;
+}
+.park_panel h2 {
+  font-size: 15px;
+  margin: 20px 0 5px 0;
+}
+.park_panel p {
+  margin: 6px 0;
+  font-family: 'Helvetica Neue';
+  color: rgb(136, 136, 136);
+  font-weight: 300;
+  font-size: 14px;
+  letter-spacing: .5px;
+  margin: 6px 0;
+}
+.img_cap {
+  margin-top: 2%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.panels_row {
+  display: flex;
+  flex: 1 1 0%;
+  align-items: flex-end;
+  justify-content: center;
+}
+.tags_row {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+.tag {
+  padding: 10px 18px;
+    font-family: 'Lato';
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #fff;
+    background: #000;
+    margin-right: 5px;
+}
+.flex-center {
+  display: flex;
+  align-items: center;
+}
+.flex {
+  display: flex;
+}
+.tag-x {
+  padding: 10px 18px;
+  font-family: 'Lato';
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #fff;
+  background: #000;
+  margin-right: 5px;
+  border: 0 !important;
+}
+.tag-x:hover {
+  background-color: #f7f7f7;
+  color: #000;
+  box-shadow: 0 !important;
+  border: 0 !important;
+}
+#new_tag {
+  height: 36px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.tag_details {
+  display: flex;
+}
+.all_tags {
+  margin-top: 50px;
+}
+.details {
+  border: 1px solid #f7f7f7;
+  font-family: 'Helvetica Neue';
+  font-weight: 300;
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 5px 12px;
+}
+.details:hover {
+  background: #000;
+  color: #fff !important;
+}
+#detailsBtn {
+  float: right;
+    margin-top: -32px;
+}
+.dropbtn {
+    color: #222;
+    font-family: 'Lato', sans-serif;
+    padding: 12px 20px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    height: 40px;
+    text-transform: uppercase;
+    border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+#search {
+  height: 5px;
+  width: 200px;
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  padding: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-left: 20%;
+}
+
+select {
+  height: 25px;
+  width: 200px;
+  background: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: 'Lato', sans-serif;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #000;
+    width: 100%;
+    margin-top: 10px;
+    height: 50px;
+    z-index: 1;
+}
+.dropdown-content a {
+  /* padding: 20px 8px;
+  background: #000; */
+  color: #fff !important;
+}
+
+.dropdown:hover .dropdown-content {
+  display: flex;
+  position: absolute;
+  background-color: #000;
+  align-items: center;
+  width: 80%;
+  padding: 0px 10%;
+  margin-top: 10px;
+  height: 50px;
+  z-index: 1;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #f7f7f7;
+}
+
+.add_panel {
+  padding: 10px 30px;
+  border: 1px solid #f7f7f7;
+  width: 300px;
+}
+
+.add_panel ul {
+  list-style-type: none;
+  font-family: 'Lato', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 12px;
+}
+
+.add_label {
+  width: 110px;
+  display: inline-block;
+}
+
+.add_panel h2 {
+  font-family: 'Lato', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 14px;
+}
+
+#add li{
+  height: 30px;
+  margin: 20px 0 0 -40px;
+}
+
+h2 {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+#add_link {
+  color: #616161 !important;
+}
+#add_link:hover {
+  padding-bottom: 3px;
+  border-bottom: 1px solid #ccc;
+}
+#mi_input {
+  width: 126px;
+margin-left: -4px;
+}
+#current_page {
+  border: 1px solid #000;
+}
+
+.footer {
+  height: 250px;
+  background: #222222;
+  width: 100vw;
+  margin: 0 0 0 -8px;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer p {
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
+  font-size: 12px;
+  color: #ccc;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.view-photo {
+  width: 70vh;
+  margin-top: 3%;
+}
+
+.user-info {
+  font-family: 'Lato', sans-serif;
+margin-top: 3%;
+font-size: 14px;
+}
+
+.view-photo img {
+  max-width: 100% !important;
+}
+
+/* Login Form */
+#loginForm {
+  border: 1px solid #f7f7f7;
+  border-radius: 4px;
+  padding: 20px;
+  font-family: 'Lato', sans-serif;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+#loginForm ul {
+  padding-left: 0;
+}
+#loginForm li {
+  list-style-type: none;
+  padding: 10px 0;
+}
+#loginForm input {
+  height: 25px;
+}
+#login {
+  margin-top: 15px;
+  width: 100%;
+  padding: 10px;
+  background: #000;
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+#login:hover {
+  cursor: pointer;
+}
+.messages {
+  text-align: center;
+  font-size: 14px;
+  font-family: 'Lato';
+  font-weight: normal;
+  margin-top: 5%;
+}
+.btn-fill {
+  width: 200px;
+background: #000;
+color: #fff !important;
+padding: 20px;
+font-family: 'Lato', sans-serif;
+text-align: center;
+font-size: 12px;
+text-transform: uppercase;
+letter-spacing: 2px;
+}
+
+.btn-add {
+  width: 100px;
+background: #000;
+color: #fff !important;
+padding: 10px;
+font-family: 'Lato', sans-serif;
+text-align: center;
+font-size: 12px;
+text-transform: uppercase;
+letter-spacing: 2px;
+}
+
+/* upload form */
+.center-panel {
+  margin-top: 5%;
+  width: 350px;
+  border-radius: 4px;
+}
+.center-panel h2 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 12px;
+  font-weight: bold;
+}
+.edit-tags h2 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: 25px;
+}
+#btn-upload {
+  margin-top: 10%;
+}
+#img_upload {
+  padding: 50px 0;
+    text-align: center;
+    border: 1px dashed #ccc;
+    border-radius: 6px;
+    margin-top: 10%;
+}
+
+#tag_edit {
+  padding: 50px 20px;
+  border: 1px dashed #ccc;
+  border-radius: 6px;
+  margin-top: 10%;
+}
+
+.btn-filled {
+  width: 100%;
+  background: #000;
+  color: #fff !important;
+  padding: 15px;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
